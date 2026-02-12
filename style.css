@@ -163,6 +163,7 @@ section:hover {
     display: flex;
     flex-wrap: wrap;
     jusify-content: center;
+    align-items: scratch;
     gap: 20px;
     margin-top: 20px;
 }
