@@ -3,164 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио Дениса</title>
+    <title>Портфолио Дениса — Главная</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Заголовок вашего сайта -->
     <header>
         <h1>Портфолио Дениса</h1>
         <nav>
-            <a href="#greeting">Главная</a>
-            <a href="#about">О себе</a>
-            <a href="#skills">Навыки</a>
-            <a href="#projects">Проекты</a>
-            <a href="#achievements">Достижения</a>
-            <a href="#contacts">Контакты</a>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О себе</a>
+            <a href="projects.html">Проекты</a>
+            <a href="contact.html">Контакты</a>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
         </nav>
     </header>
 
-    <!-- Основной контент портфолио -->
     <main>
-        <!-- Приветствие -->
         <section id="greeting" class="greeting-section">
             <div class="greeting-content">
                 <div class="avatar-wrapper">
-                    <div class="tenor-gif-embed"
-                        data-postid="26255427"
-                        data-share-method="host"
-                        data-aspect-ratio="0.884375"
-                        data-width="100%">
-                    </div>
+                    <div class="tenor-gif-embed" data-postid="26255427" data-share-method="host" data-aspect-ratio="0.884375" data-width="100%"></div>
                 </div>
                 <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
                 <div class="greeting-text">
                     <h2>Добро пожаловать на мой портфолио!</h2>
                     <p class="slogan">🚀 Стремлюсь стать профессиональным веб-разработчиком</p>
-                    <p class="subtitle">Здесь вы найдете информацию о моих навыках, проектах и способах связи со мной.</p>
+                    <p class="subtitle">Здесь вы найдёте информацию о моих навыках, проектах и способах связи.</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Информация о себе -->
-        <section id="about" class="about-section">
-            <h2>О себе</h2>
-            <div class="about-content">
-                <div class="bio-card">
-                    <h3>📋 Краткая биография</h3>
-                    <p>Меня зовут Денис. Я из города Павлодар. Учусь в университете на специальности Computer Science, изучаю веб-технологии и современные подходы к разработке.</p>
-                </div>
-                <div class="bio-card">
-                    <h3>💡 Интересы</h3>
-                    <p>Увлечен веб-разработкой, дизайном интерфейсов и созданием удобных пользовательских опытов. Интересуюсь современными фреймворками и инструментами для разработки.</p>
-                </div>
-                <div class="bio-card">
-                    <h3>🎯 Хобби</h3>
-                    <p>Видеоигры, спорт, экспериментирование с новыми технологиями.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Навыки -->
-        <section id="skills" class="skills-section">
-            <h2>Навыки</h2>
-            <div class="skills-container">
-                <div class="skills-group">
-                    <h3>🛠️ Технические навыки</h3>
-                    <ul class="skills-list">
-                        <li>
-                            <span class="skill-name">HTML5</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="skill-name">CSS3</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 60%"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="skills-group">
-                    <h3>🤝 Мягкие навыки</h3>
-                    <ul class="soft-skills">
-                        <li>✓ Коммуникабельность</li>
-                        <li>✓ Работа в команде</li>
-                        <li>✓ Креативность</li>
-                        <li>✓ Учебная способность</li>
-                        <li>✓ Решение проблем</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Проекты -->
-        <section id="projects" class="projects-section">
-            <h2>Проекты</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <h3>📱 Это портфолио</h3>
-                    <p>Мой первый проект - создание персонального сайта-портфолио с использованием HTML и CSS.</p>
-                    <p class="project-tech">Технологии: HTML5, CSS3</p>
-                </div>
-                <div class="project-card coming-soon">
-                    <h3>🔄 Следующие проекты</h3>
-                    <p>В разработке... Скоро здесь появятся новые интересные проекты!</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Достижения -->
-        <section id="achievements" class="achievements-section">
-            <h2>Достижения</h2>
-            <div class="achievements-list">
-                <div class="achievement">
-                    <span class="achievement-icon">🏆</span>
-                    <p>Успешно прошел курсы по основам HTML и CSS</p>
-                </div>
-                <div class="achievement">
-                    <span class="achievement-icon">📚</span>
-                    <p>Завершил обучение веб-разработке</p>
-                </div>
-                <div class="achievement">
-                    <span class="achievement-icon">🚀</span>
-                    <p>Создал свое первое портфолио</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Контакты -->
-        <section id="contacts" class="contacts-section">
-            <h2>Контакты</h2>
-            <div class="contacts-container">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deni2pod2006@gmail.com"
-                    targer='_blank'
-                    class="contact-link email>
-                    <span class="contact-icon">✉️</span>
-                    <span>Email</span>
-                </a>
-                <a href="https://t.me/perruH" class="contact-link telegram" target="_blank">
-                    <span class="contact-icon">💬</span>
-                    <span>Telegram</span>
-                </a>
-                <a href="https://github.com/grousstreet" class="contact-link github" target="_blank">
-                    <span class="contact-icon">💻</span>
-                    <span>GitHub</span>
-                </a>
             </div>
         </section>
     </main>
 
-    <!-- Нижний колонтитул -->
     <footer>
-        <p>&copy; 2026 Портфолио Дениса. Все права защищены. | Сделано с ❤️</p>
+        <p>&copy; 2026 Денис (grousstreet). Все права защищены. | Сделано с ❤️</p>
     </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
