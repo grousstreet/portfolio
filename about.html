@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Дениса — О себе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Портфолио Дениса</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О себе</a>
+            <a href="projects.html">Проекты</a>
+            <a href="contact.html">Контакты</a>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </nav>
+    </header>
 
+    <main>
+        <section id="about" class="about-section">
+            <h2>О себе</h2>
+            <div class="about-content">
+                <div class="bio-card">
+                    <h3>📋 Краткая биография</h3>
+                    <p>Меня зовут Денис. Я из города Павлодар. Учусь в университете на специальности Computer Science, изучаю веб-технологии и современные подходы к разработке.</p>
+                </div>
+                <div class="bio-card">
+                    <h3>💡 Интересы</h3>
+                    <p>Увлечён веб-разработкой, дизайном интерфейсов и созданием удобных пользовательских опытов. Интересуюсь современными фреймворками и инструментами.</p>
+                </div>
+                <div class="bio-card">
+                    <h3>🎯 Навыки и цели</h3>
+                    <p>Цель — стать профессиональным веб-разработчиком. Хобби: видеоигры, спорт, эксперименты с новыми технологиями.</p>
+                </div>
+            </div>
+
+            <!-- Навыки (перенесены сюда) -->
+            <div class="skills-container">
+                <div class="skills-group">
+                    <h3>🛠️ Технические навыки</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-name">HTML5</span><div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div></li>
+                        <li><span class="skill-name">CSS3</span><div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div></li>
+                        <li><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div></li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h3>🤝 Мягкие навыки</h3>
+                    <ul class="soft-skills">
+                        <li>✓ Коммуникабельность</li>
+                        <li>✓ Работа в команде</li>
+                        <li>✓ Креативность</li>
+                        <li>✓ Учебная способность</li>
+                        <li>✓ Решение проблем</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Достижения -->
+            <div class="achievements-list">
+                <div class="achievement"><span class="achievement-icon">🏆</span><p>Успешно прошёл курсы по основам HTML и CSS</p></div>
+                <div class="achievement"><span class="achievement-icon">📚</span><p>Завершил обучение веб-разработке</p></div>
+                <div class="achievement"><span class="achievement-icon">🚀</span><p>Создал своё первое портфолио</p></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Денис (grousstreet). Все права защищены. | Сделано с ❤️</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
