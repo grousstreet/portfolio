@@ -339,7 +339,7 @@ section:hover {
     font-weight: 500;
 }
 
-/* ===== КОНТАКТ�� ===== */
+/* ===== КОНТАКТЫ ===== */
 .contacts-container {
     display: flex;
     justify-content: center;
@@ -417,6 +417,76 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* =====ТЁМНАЯ ТЕМА ===== */
+body.dark {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+body.dark header {
+    background: linear-gradient(135deg, #334155 0%, #1e2937 100%);
+}
+body.dark h1, body.dark h2 { color: #60a5fa; }
+body.dark h3 { color: #93c5fd; }
+body.dark section {
+    background-color: #1e2937;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+body.dark .greeting-section { background: linear-gradient(135deg, rgba(51,65,85,0.9), rgba(30,41,55,0.9)); }
+body.dark .bio-card, body.dark .achievement { background: linear-gradient(135deg, #334155 0%, #1e2937 100%); color: #e0e0e0; }
+body.dark .project-card { background: linear-gradient(135deg, #334155 0%, #1e2937 100%); }
+body.dark .coming-soon { background: linear-gradient(135deg, #475569 0%, #334155 100%); }
+body.dark .contact-link { filter: brightness(1.1); }
+
+/* ===== СТИЛИ ФОРМЫ ===== */
+.form-container {
+    margin: 30px 0;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+body.dark .contact-form input,
+body.dark .contact-form textarea {
+    background: #334155;
+    color: #e0e0e0;
+    border-color: #475569;
+}
+.contact-form button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact-form button:hover { background: #764ba2; }
+
+/* ===== КНОПКА ТЕМЫ ===== */
+.theme-btn {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.theme-btn:hover { transform: scale(1.15); background: rgba(255,255,255,0.3); }
 
 /* ===== АДАПТИВНОСТЬ ===== */
 @media (max-width: 768px) {
