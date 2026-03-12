@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Дениса — Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Портфолио Дениса</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О себе</a>
+            <a href="projects.html">Проекты</a>
+            <a href="contact.html">Контакты</a>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </nav>
+    </header>
 
+    <main>
+        <section id="contacts" class="contacts-section">
+            <h2>Контакты</h2>
+
+            <!-- Форма обратной связи -->
+            <div class="form-container">
+                <h3>Напишите мне</h3>
+                <form id="contact-form" class="contact-form">
+                    <input type="text" id="name" placeholder="Ваше имя" required>
+                    <input type="email" id="email" placeholder="Ваш email" required>
+                    <textarea id="message" placeholder="Ваше сообщение" required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+
+            <!-- Контактные ссылки -->
+            <div class="contacts-container">
+                <a href="mailto:deni2pod2006@gmail.com" class="contact-link email" target="_blank">
+                    <span class="contact-icon">✉️</span><span>Email</span>
+                </a>
+                <a href="https://t.me/perruH" class="contact-link telegram" target="_blank">
+                    <span class="contact-icon">💬</span><span>Telegram</span>
+                </a>
+                <a href="https://github.com/grousstreet" class="contact-link github" target="_blank">
+                    <span class="contact-icon">💻</span><span>GitHub</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Портфолио Дениса. Все права защищены. | Сделано с ❤️</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
