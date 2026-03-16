@@ -3,47 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио Дениса — О себе</title>
+    <title>О себе - Портфолио Дениса</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Портфолио Дениса</h1>
+        <div class="header-content">
+            <h1>Портфолио Дениса</h1>
+            <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
         <nav>
             <a href="index.html">Главная</a>
-            <a href="about.html">О себе</a>
+            <a href="about.html" class="active">О себе</a>
             <a href="projects.html">Проекты</a>
             <a href="contact.html">Контакты</a>
-            <button id="theme-toggle" class="theme-btn">🌙</button>
         </nav>
     </header>
 
     <main>
-        <section id="about" class="about-section">
+        <section class="about-section">
             <h2>О себе</h2>
             <div class="about-content">
-                <div class="bio-card">
+                <div class="bio-card animate-fade-in">
                     <h3>📋 Краткая биография</h3>
                     <p>Меня зовут Денис. Я из города Павлодар. Учусь в университете на специальности Computer Science, изучаю веб-технологии и современные подходы к разработке.</p>
                 </div>
-                <div class="bio-card">
+                <div class="bio-card animate-fade-in" style="animation-delay: 0.1s">
                     <h3>💡 Интересы</h3>
-                    <p>Увлечён веб-разработкой, дизайном интерфейсов и созданием удобных пользовательских опытов. Интересуюсь современными фреймворками и инструментами.</p>
+                    <p>Увлечен веб-разработкой, дизайном интерфейсов и созданием удобных пользовательских опытов. Интересуюсь современными фреймворками и инструментами для разработки.</p>
                 </div>
-                <div class="bio-card">
-                    <h3>🎯 Навыки и цели</h3>
-                    <p>Цель — стать профессиональным веб-разработчиком. Хобби: видеоигры, спорт, эксперименты с новыми технологиями.</p>
+                <div class="bio-card animate-fade-in" style="animation-delay: 0.2s">
+                    <h3>🎯 Хобби</h3>
+                    <p>Видеоигры, спорт, экспериментирование с новыми технологиями.</p>
                 </div>
             </div>
+        </section>
 
-            <!-- Навыки (перенесены сюда) -->
+        <section class="goals-section">
+            <h2>🎯 Мои цели</h2>
+            <div class="goals-content">
+                <div class="goal-item animate-slide-in">
+                    <span class="goal-number">01</span>
+                    <div class="goal-text">
+                        <h3>Стать профессиональным веб-разработчиком</h3>
+                        <p>Освоить современные технологии и фреймворки для создания качественных веб-приложений</p>
+                    </div>
+                </div>
+                <div class="goal-item animate-slide-in" style="animation-delay: 0.1s">
+                    <span class="goal-number">02</span>
+                    <div class="goal-text">
+                        <h3>Работать над интересными проектами</h3>
+                        <p>Применять полученные знания в реальных проектах и постоянно совершенствоваться</p>
+                    </div>
+                </div>
+                <div class="goal-item animate-slide-in" style="animation-delay: 0.2s">
+                    <span class="goal-number">03</span>
+                    <div class="goal-text">
+                        <h3>Развивать навыки командной работы</h3>
+                        <p>Учиться эффективно работать в команде и делиться знаниями с коллегами</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2>Навыки</h2>
             <div class="skills-container">
                 <div class="skills-group">
                     <h3>🛠️ Технические навыки</h3>
                     <ul class="skills-list">
-                        <li><span class="skill-name">HTML5</span><div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div></li>
-                        <li><span class="skill-name">CSS3</span><div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div></li>
-                        <li><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div></li>
+                        <li>
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%" data-width="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%" data-width="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%" data-width="60"></div>
+                            </div>
+                            <span class="skill-percent">60%</span>
+                        </li>
                     </ul>
                 </div>
                 <div class="skills-group">
@@ -54,23 +105,35 @@
                         <li>✓ Креативность</li>
                         <li>✓ Учебная способность</li>
                         <li>✓ Решение проблем</li>
+                        <li>✓ Внимание к деталям</li>
                     </ul>
                 </div>
             </div>
+        </section>
 
-            <!-- Достижения -->
+        <section class="achievements-section">
+            <h2>Достижения</h2>
             <div class="achievements-list">
-                <div class="achievement"><span class="achievement-icon">🏆</span><p>Успешно прошёл курсы по основам HTML и CSS</p></div>
-                <div class="achievement"><span class="achievement-icon">📚</span><p>Завершил обучение веб-разработке</p></div>
-                <div class="achievement"><span class="achievement-icon">🚀</span><p>Создал своё первое портфолио</p></div>
+                <div class="achievement animate-bounce" style="animation-delay: 0.1s">
+                    <span class="achievement-icon">🏆</span>
+                    <p>Успешно прошел курсы по основам HTML и CSS</p>
+                </div>
+                <div class="achievement animate-bounce" style="animation-delay: 0.2s">
+                    <span class="achievement-icon">📚</span>
+                    <p>Завершил обучение веб-разработке</p>
+                </div>
+                <div class="achievement animate-bounce" style="animation-delay: 0.3s">
+                    <span class="achievement-icon">🚀</span>
+                    <p>Создал свое первое портфолио</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Портфолио Дениса. Все права защищены. | Сделано с ❤️</p>
+        <p>&copy; 2026 Денис | Сделано с ❤️</p>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
