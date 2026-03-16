@@ -3,43 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио Дениса — Проекты</title>
+    <title>Проекты - Портфолио Дениса</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Портфолио Дениса</h1>
+        <div class="header-content">
+            <h1>Портфолио Дениса</h1>
+            <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
         <nav>
             <a href="index.html">Главная</a>
             <a href="about.html">О себе</a>
-            <a href="projects.html">Проекты</a>
+            <a href="projects.html" class="active">Проекты</a>
             <a href="contact.html">Контакты</a>
-            <button id="theme-toggle" class="theme-btn">🌙</button>
         </nav>
     </header>
 
     <main>
-        <section id="projects" class="projects-section">
+        <section class="projects-section">
             <h2>Мои проекты</h2>
             <div class="projects-container">
-                <div class="project-card">
-                    <h3>📱 Это портфолио (v2)</h3>
-                    <p>Многостраничный сайт-портфолио с тёмной темой, формой обратной связи и семантической структурой.</p>
-                    <p class="project-tech">Технологии: HTML5, CSS3, JavaScript</p>
-                    <!-- После загрузки на GitHub добавь ссылки -->
+                <!-- Проект 1: Course-Gen -->
+                <div class="project-card animate-scale-in">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-status">Завершен</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>🎓 CourseGen - Генератор курсов</h3>
+                        <p>Локальная платформа для автоматической генерации структурированных образовательных курсов на основе видео с использованием AI. Включает интеграцию с LLM (LM Studio/Qwen), API на FastAPI, работу с базой данных SQLite и экспорт курсов в HTML.</p>
+                        <p class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">FastAPI</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">SQLite</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">AI/LLM</span>
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/Cobblestone-Generator/Course-Gen" target="_blank" class="project-link">
+                                <span>💻</span> GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card coming-soon">
-                    <h3>🔄 Будущие проекты</h3>
-                    <p>В разработке… Скоро появятся проекты на JavaScript, React и с backend!</p>
+
+                <!-- Проект 2: Портфолио -->
+                <div class="project-card animate-scale-in" style="animation-delay: 0.1s">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-status">Завершен</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>📱 Портфолио-сайт</h3>
+                        <p>Персональный сайт-портфолио с адаптивным дизайном, темной темой и современными анимациями. Включает несколько страниц: главная, о себе, проекты и контакты с формой обратной связи.</p>
+                        <p class="project-tech">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Responsive Design</span>
+                        </p>
+                        <div class="project-links">
+                            <a href="index.html" class="project-link">
+                                <span>👁️</span> Посмотреть
+                            </a>
+                            <a href="https://github.com/grousstreet" target="_blank" class="project-link">
+                                <span>💻</span> GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Портфолио Дениса. Все права защищены. | Сделано с ❤️</p>
+        <p>&copy; 2026 Денис | Сделано с ❤️</p>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
