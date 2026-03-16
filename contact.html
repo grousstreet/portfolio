@@ -3,60 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио Дениса — Контакты</title>
+    <title>Контакты - Портфолио Дениса</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Портфолио Дениса</h1>
+        <div class="header-content">
+            <h1>Портфолио Дениса</h1>
+            <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
         <nav>
             <a href="index.html">Главная</a>
             <a href="about.html">О себе</a>
             <a href="projects.html">Проекты</a>
-            <a href="contact.html">Контакты</a>
-            <button id="theme-toggle" class="theme-btn">🌙</button>
+            <a href="contact.html" class="active">Контакты</a>
         </nav>
     </header>
 
     <main>
-        <section id="contacts" class="contacts-section">
-            <h2>Контакты</h2>
+        <section class="contact-intro">
+            <h2>Свяжитесь со мной</h2>
+            <p class="contact-subtitle">Готов обсудить новые проекты и возможности сотрудничества!</p>
+        </section>
 
-            <!-- Форма обратной связи -->
+        <section class="contact-form-section">
             <div class="form-container">
-                <h3>Напишите мне</h3>
-                <form id="contact-form" class="contact-form">
-                    <input type="text" id="name" placeholder="Ваше имя" required>
-                    <input type="email" id="email" placeholder="Ваш email" required>
-                    <textarea id="message" placeholder="Ваше сообщение" required></textarea>
-                    <button type="submit">Отправить</button>
+                <h3>📩 Форма обратной связи</h3>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Имя *</label>
+                        <input type="text" id="name" name="name" required placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Ваше сообщение..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span class="btn-text">Отправить</span>
+                        <span class="btn-icon">✉️</span>
+                    </button>
                 </form>
+                <div id="formMessage" class="form-message"></div>
             </div>
+        </section>
 
-            <!-- Контакты -->
+        <section class="contacts-section">
+            <h2>Контактная информация</h2>
             <div class="contacts-container">
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deni2pod2006@gmail.com"
-                    targer='_blank'
-                    class="contact-link email>
+                    target="_blank"
+                    class="contact-link email animate-pulse">
                     <span class="contact-icon">✉️</span>
-                    <span>Email</span>
+                    <div class="contact-info">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">deni2pod2006@gmail.com</span>
+                    </div>
                 </a>
-                <a href="https://t.me/perruH" class="contact-link telegram" target="_blank">
+                <a href="https://t.me/perruH" class="contact-link telegram animate-pulse" target="_blank" style="animation-delay: 0.1s">
                     <span class="contact-icon">💬</span>
-                    <span>Telegram</span>
+                    <div class="contact-info">
+                        <span class="contact-label">Telegram</span>
+                        <span class="contact-value">@perruH</span>
+                    </div>
                 </a>
-                <a href="https://github.com/grousstreet" class="contact-link github" target="_blank">
+                <a href="https://github.com/grousstreet" class="contact-link github animate-pulse" target="_blank" style="animation-delay: 0.2s">
                     <span class="contact-icon">💻</span>
-                    <span>GitHub</span>
+                    <div class="contact-info">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">grousstreet</span>
+                    </div>
                 </a>
+            </div>
+        </section>
+
+        <section class="location-section">
+            <div class="location-info animate-fade-in">
+                <h3>📍 Местоположение</h3>
+                <p>Павлодар, Казахстан</p>
+                <p class="timezone">Часовой пояс: UTC+5</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Портфолио Дениса. Все права защищены. | Сделано с ❤️</p>
+        <p>&copy; 2026 Денис | Сделано с ❤️</p>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
