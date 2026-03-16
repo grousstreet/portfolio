@@ -3,41 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио Дениса — Главная</title>
+    <title>Портфолио Дениса - Главная</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Портфолио Дениса</h1>
+        <div class="header-content">
+            <h1>Портфолио Дениса</h1>
+            <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
         <nav>
-            <a href="index.html">Главная</a>
+            <a href="index.html" class="active">Главная</a>
             <a href="about.html">О себе</a>
             <a href="projects.html">Проекты</a>
             <a href="contact.html">Контакты</a>
-            <button id="theme-toggle" class="theme-btn">🌙</button>
         </nav>
     </header>
 
     <main>
-        <section id="greeting" class="greeting-section">
+        <section class="greeting-section">
             <div class="greeting-content">
-                <div class="avatar-wrapper">
-                    <div class="tenor-gif-embed" data-postid="26255427" data-share-method="host" data-aspect-ratio="0.884375" data-width="100%"></div>
+                <div class="avatar-wrapper animate-fade-in">
+                    <div class="tenor-gif-embed"
+                        data-postid="26255427"
+                        data-share-method="host"
+                        data-aspect-ratio="0.884375"
+                        data-width="100%">
+                    </div>
                 </div>
                 <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-                <div class="greeting-text">
-                    <h2>Добро пожаловать на мой портфолио!</h2>
+                <div class="greeting-text animate-slide-up">
+                    <h2>Добро пожаловать на мое портфолио!</h2>
                     <p class="slogan">🚀 Стремлюсь стать профессиональным веб-разработчиком</p>
-                    <p class="subtitle">Здесь вы найдёте информацию о моих навыках, проектах и способах связи.</p>
+                    <p class="subtitle">Здесь вы найдете информацию о моих навыках, проектах и способах связи со мной.</p>
+                    <div class="cta-buttons">
+                        <a href="projects.html" class="btn btn-primary">Мои проекты</a>
+                        <a href="contact.html" class="btn btn-secondary">Связаться</a>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <section class="highlights-section">
+            <h2>Немного обо мне</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card animate-fade-in" style="animation-delay: 0.1s">
+                    <div class="highlight-icon">🎓</div>
+                    <h3>Образование</h3>
+                    <p>Computer Science</p>
+                    <p class="highlight-detail">Павлодар, Казахстан</p>
+                </div>
+                <div class="highlight-card animate-fade-in" style="animation-delay: 0.2s">
+                    <div class="highlight-icon">💻</div>
+                    <h3>Специализация</h3>
+                    <p>Веб-разработка</p>
+                    <p class="highlight-detail">HTML, CSS, JavaScript</p>
+                </div>
+                <div class="highlight-card animate-fade-in" style="animation-delay: 0.3s">
+                    <div class="highlight-icon">🎯</div>
+                    <h3>Цель</h3>
+                    <p>Профессиональный рост</p>
+                    <p class="highlight-detail">Создание современных веб-приложений</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-preview">
+            <h2>Основные навыки</h2>
+            <div class="skills-tags">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Responsive Design</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Работа в команде</span>
+            </div>
+            <a href="about.html" class="link-more">Узнать больше →</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Портфолио Дениса. Все права защищены. | Сделано с ❤️</p>
+        <p>&copy; 2026 Денис | Сделано с ❤️</p>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
